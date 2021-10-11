@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #f1f2f6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Menu */
+
+.menu {
+  position: fixed;
+  top: 200px;
+  left: 50px;
+}
+
+.menu-item {
+  font-size: 24px;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: block;
+}
+.menu-item:hover,
+.menu-item:active {
+  color: #ff6b81;
+}
+
+p#copyRight {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  transform: rotate(90deg) translate(-60%, 400%);
+}
+
+img#logo {
+  height: 60px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 50%;
+}
+
+/* Home */
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+main h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+}
+
+/* About */
+
+span.subject {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#about p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* Project */
+.project {
+  display: grid;
+  grid-template-columns: auto 200px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.text-intro {
+  padding: 2rem;
+}
+
+.image-intro > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* resoponsive */
+
+@media screen and (max-width: 768px) {
+  /* tablet */
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+  p#logo {
+    bottom: 100%;
+    transform: rotate(90deg) translate(70%, 800%);
+  }
+}
